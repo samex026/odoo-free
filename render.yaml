@@ -1,10 +1,13 @@
 services:
   - type: web
-    name: odoo-web
+    name: odoo-render
     runtime: docker
     plan: free
     env: docker
-    port: 8069
+    port: 8069  # Puerto que Render redirigirá al contenedor
     envVars:
       - key: HOST
         value: 0.0.0.0
+      - key: PORT
+        value: 8069
+      # Nota: NO incluyas PGDATABASE o ADMIN_PASSWD aquí (usa el panel de Render).
