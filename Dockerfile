@@ -1,1 +1,2 @@
-From odoo:17.0
+FROM odoo:17.0
+COPY odoo.conf /etc/odoo/odoo.conf
