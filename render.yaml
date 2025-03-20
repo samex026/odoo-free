@@ -3,15 +3,4 @@ services:
     name: odoo-render
     plan: free
     runtime: docker
-    port: 8069 
-    env:
-      - name: DB_HOST
-        value: dpg-cvdtqrtumphs73blbv3g-a.oregon-postgres.render.com
-      - name: DB_PORT
-        value: "5432"
-      - name: DB_USER
-        value: odoo
-      - name: DB_PASSWORD
-        value: mW3mT3cPh9B4H09CDyGu12Dki9SBNMva
-      - name: DB_NAME
-        value: odoo_7snu
+    port: 8069
